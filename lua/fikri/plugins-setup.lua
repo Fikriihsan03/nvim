@@ -117,10 +117,6 @@ return packer.startup(function(use)
 
 	use("ThePrimeagen/harpoon") -- harpoon for moving fast
 
-	use({
-		"akinsho/toggleterm.nvim",
-		tag = "*",
-	}) --float terminal inside neovim
 
 	use("andweeb/presence.nvim")
 
