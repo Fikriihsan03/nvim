@@ -13,6 +13,11 @@ saga.setup({
 			edit = "<CR>",
 		},
 	},
+  finder = {
+    keys = {
+      toggle_or_open = "<CR>"
+    }
+  },
 	ui = {
 		colors = {
 			normal_bg = "#022746",
