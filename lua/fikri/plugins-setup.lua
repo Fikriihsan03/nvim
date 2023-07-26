@@ -117,6 +117,7 @@ return packer.startup(function(use)
 
 	use("ThePrimeagen/harpoon") -- harpoon for moving fast
 
+  use("xiyaowong/transparent.nvim") --global change for background trancparency
 
 	use("andweeb/presence.nvim")
 
