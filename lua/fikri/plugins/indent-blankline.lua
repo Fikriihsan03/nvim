@@ -1,4 +1,4 @@
-local status, indent_blankline = pcall(require, "indent_blankline")
+local status, indent_blankline = pcall(require, "ibl")
 if not status then
 	return
 end
@@ -15,11 +15,19 @@ vim.opt.listchars:append("space:⋅")
 vim.opt.listchars:append("eol:↴")
 
 indent_blankline.setup({
-	space_char_blankline = " ",
-	show_current_context = true,
-	show_current_context_start = true,
-  filetype_exclude = {"dashboard"}
+	exclude = {
+		filetypes = {
+			"dashboard",
+		},
+	},
+	-- filetype_exclude = { "dashboard" },
 })
+-- indent_blankline.setup({
+-- 	space_char_blankline = " ",
+-- 	show_current_context = true,
+-- 	show_current_context_start = true,
+--   filetype_exclude = {"dashboard"}
+-- })
 --[[ indent_blankline.setup({
     space_char_blankline = " ",
     char_highlight_list = {
