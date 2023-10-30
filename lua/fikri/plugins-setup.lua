@@ -80,7 +80,7 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
 	use({
-		"glepnir/lspsaga.nvim",
+		"nvimdev/lspsaga.nvim",
 		branch = "main",
 		requires = {
 			{ "nvim-tree/nvim-web-devicons" },
@@ -111,17 +111,21 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
 	--dashboard view
-	use({ "glepnir/dashboard-nvim", event = "VimEnter", requires = { "nvim-tree/nvim-web-devicons" } })
+	use({
+		"nvimdev/dashboard-nvim",
+		event = "VimEnter",
+		requires = { "nvim-tree/nvim-web-devicons" },
+	})
 
 	use("lukas-reineke/indent-blankline.nvim") --indentation line display
 
 	use("ThePrimeagen/harpoon") -- harpoon for moving fast
 
-  use("xiyaowong/transparent.nvim") --global change for background trancparency
+	use("xiyaowong/transparent.nvim") --global change for background trancparency
 
 	use("andweeb/presence.nvim")
 
-  use("f-person/git-blame.nvim")
+	use("f-person/git-blame.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
