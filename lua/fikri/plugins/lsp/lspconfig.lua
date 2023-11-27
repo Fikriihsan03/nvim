@@ -113,6 +113,11 @@ lspconfig["pyright"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
+-- configure python server
+lspconfig["jdtls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
 
 -- configure emmet language server
 lspconfig["emmet_ls"].setup({

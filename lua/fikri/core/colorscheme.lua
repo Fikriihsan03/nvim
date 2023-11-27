@@ -12,10 +12,10 @@ if not catppuccin_status then
 end
 
 catppuccin.setup({
-	flavour = "mocha", -- latte, frappe, macchiato, mocha
+	flavour = "frappe", -- latte, frappe, macchiato, mocha
 	background = { -- :h background
 		light = "latte",
-		dark = "mocha",
+		dark = "frappe",
 	},
 	transparent_background = vim.g.transparent_enabled,
 	show_end_of_buffer = false, -- show the '~' characters after the end of buffers

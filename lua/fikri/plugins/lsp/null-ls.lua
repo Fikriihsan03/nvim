@@ -20,8 +20,13 @@ null_ls.setup({
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.phpcbf, -- php formatter
+    formatting.blade_formatter, --blade formatter
 		formatting.black.with({ extra_args = { "--line-length=120" } }), -- python formatter
+		formatting.google_java_format,
 		diagnostics.flake8,
+		diagnostics.checkstyle.with({
+			extra_args = { "-c", "/google_checks.xml" }, -- or "/sun_checks.xml" or path to self written rules
+		}),
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
 			condition = function(utils)

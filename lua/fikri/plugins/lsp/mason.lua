@@ -28,6 +28,11 @@ mason_lspconfig.setup({
 		"tailwindcss",
 		"lua_ls",
 		"emmet_ls",
+		"intelephense",
+		"pyright",
+		"jdtls",
+		"volar",
+		"jsonls",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -42,6 +47,9 @@ mason_null_ls.setup({
 		"yapf", -- python formatter
 		"blade-formatter", --blade
 		"flake8", -- python linter
+		"phpcbf", -- php formatter
+		"google-java-format",
+		"checkstyle",
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
