@@ -40,7 +40,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.iskeyword:append("-") -- consider string-string as whole word
 
-opt.guitablabel = "%t"
+opt.tabline= "%t"
 
 opt.shell = "/usr/bin/zsh"
 
