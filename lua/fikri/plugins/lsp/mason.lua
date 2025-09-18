@@ -31,7 +31,7 @@ mason_lspconfig.setup({
 		"intelephense",
 		"pyright",
 		"jdtls",
-		"volar",
+		"vue_ls",
 		"jsonls",
 	},
 	-- auto-install configured servers (with lspconfig)

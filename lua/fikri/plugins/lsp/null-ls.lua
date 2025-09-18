@@ -20,7 +20,7 @@ null_ls.setup({
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.phpcbf, -- php formatter
-    formatting.blade_formatter, --blade formatter
+		formatting.blade_formatter, --blade formatter
 		formatting.black.with({ extra_args = { "--line-length=120" } }), -- python formatter
 		formatting.google_java_format,
 		-- diagnostics.flake8,
